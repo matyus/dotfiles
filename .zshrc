@@ -8,8 +8,8 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="gallifrey"
 
 # Example aliases
- alias zshconfig="vim ~/.zshrc"
- alias ohmyzsh="vim ~/.oh-my-zsh"
+# alias zshconfig="vim ~/.zshrc"
+# alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -26,15 +26,23 @@ alias safari="open -a Safari"
 alias firefox="open -a Firefox"
 
 # Apps
-alias photoshop="open -a Adobe\ Photoshop\ CC"
+alias photoshop="open -a Adobe\ Photoshop\ CC\ 2014"
 
 alias dotfilez="vim ~/.zshrc"
 alias zshfilez="vim ~/.oh-my-zsh"
+alias vvimrc="vim ~/.vimrc"
 
-alias docz="cd ~/Documents"
+alias doc="cd ~/Documents"
 alias vdoc="vim ~/Documents"
 alias temp="cd ~/Temp && ls -la"
 alias cleantemp="rm -rv ~/Temp/*"
+
+# Samsung Specific Aliases
+alias tvpx="cd ~/Documents/tv-px && gst"
+alias mypx="cd ~/Documents/px && gst"
+alias npmreginstall="npm --registry http://npm.px.sisa.samsung.com install"
+alias gesturesproto="cd ~/Documents/gestures && gst"
+alias searchproto="cd ~/Documents/search-playground && gst"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,3 +106,10 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Android SDK
+export PATH="/Users/m.matyus/Documents/adt-bundle-mac-x86_64-20140702/sdk:$PATH"
+export PATH="/Users/m.matyus/Documents/adt-bundle-mac-x86_64-20140702/sdk/tools:$PATH"
+export PATH="/Users/m.matyus/Documents/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH"
