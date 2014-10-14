@@ -36,6 +36,9 @@ alias vdoc="vim ~/Documents"
 alias temp="cd ~/Temp && ls -la"
 alias cleantemp="rm -rv ~/Temp/*"
 
+alias ethIP="ipconfig getifaddr en5"
+alias wifiIP="ipconfig getifaddr en0"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -97,4 +100,5 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
+export EDITOR="/usr/local/Cellar/vim/7.4.335/bin/vim"
+alias vim="/usr/local/Cellar/vim/7.4.335/bin/vim"
