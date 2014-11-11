@@ -31,18 +31,15 @@ alias photoshop="open -a Adobe\ Photoshop\ CC\ 2014"
 alias dotfilez="vim ~/.zshrc"
 alias zshfilez="vim ~/.oh-my-zsh"
 alias vvimrc="vim ~/.vimrc"
+alias tmls="tmux ls"
+alias tmns="tmux new -s"
 
 alias doc="cd ~/Documents"
 alias vdoc="vim ~/Documents"
 alias temp="cd ~/Temp && ls -la"
 alias cleantemp="rm -rv ~/Temp/*"
 
-# Samsung Specific Aliases
-alias tvpx="cd ~/Documents/tv-px && gst"
-alias mypx="cd ~/Documents/px && gst"
 alias npmreginstall="npm --registry http://npm.px.sisa.samsung.com install"
-alias gesturesproto="cd ~/Documents/gestures && gst"
-alias searchproto="cd ~/Documents/search-playground && gst"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -113,3 +110,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Users/m.matyus/Documents/adt-bundle-mac-x86_64-20140702/sdk:$PATH"
 export PATH="/Users/m.matyus/Documents/adt-bundle-mac-x86_64-20140702/sdk/tools:$PATH"
 export PATH="/Users/m.matyus/Documents/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH"
+
+export EDITOR="/usr/local/Cellar/vim/7.4.488/bin/vim"
+alias vim="/usr/local/Cellar/vim/7.4.488/bin/vim"
