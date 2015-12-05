@@ -1,3 +1,5 @@
+set nocompatible
+
 execute pathogen#infect()
 syntax enable
 let g:solarized_termtrans=1
@@ -28,9 +30,28 @@ set showmode
 set showcmd
 set scrolloff=5
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let NERDTreeShowBookmarks=1 "show bookmark at start up
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
 
-"autocmd VimEnter * NERDTree
-"autocmd VimEnter * wincmd p
+nnoremap <Leader>l :noh<CR>
+nmap <Leader>w :w<CR>
+
+"Bubble line
+nmap ˚ ddkP
+nmap ∆ ddp
+
+"Bubble Multi-line
+vmap ˚ xkP`[V`]
+vmap ∆ xp`[V`]
+
+"Navigate buffers
+nmap Ó :bnext<CR>
+nmap Ò :bprevious<CR>
+nmap <D-M-l> :bnext<CR>
+nmap <D-M-j> :bprevious<CR>
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 autocmd BufWritePre * :%s/\s\+$//e
