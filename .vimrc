@@ -3,11 +3,11 @@ set nocompatible
 execute pathogen#infect()
 syntax enable
 let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:polarized_visibility="high"
-let g:solarized_contrast="high"
-colorscheme solarized
+let g:solarized_termcolors=16
+let g:solarized_visibility="normal"
+let g:solarized_contrast="normal"
 set background=dark
+colorscheme solarized
 
 filetype plugin indent on
 set shiftwidth=2 tabstop=2 softtabstop=2 expandtab
@@ -30,6 +30,9 @@ set showmode
 set showcmd
 set scrolloff=5
 
+let g:netrw_preview = 1
+let g:netrw_winsize = 55
+
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
@@ -37,6 +40,7 @@ nnoremap <C-k> <C-w>k
 
 nnoremap <Leader>l :noh<CR>
 nmap <Leader>w :w<CR>
+nmap <Leader>e :Explore<CR>
 
 "Bubble line
 nmap ˚ ddkP
