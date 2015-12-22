@@ -9,6 +9,10 @@ let g:solarized_contrast="normal"
 set background=dark
 colorscheme solarized
 
+set clipboard=unnamed
+
+set backspace=indent,eol,start
+
 filetype plugin indent on
 set shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 set backupdir=~/.vim/backups
@@ -57,5 +61,6 @@ nmap <D-M-l> :bnext<CR>
 nmap <D-M-j> :bprevious<CR>
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 
 autocmd BufWritePre * :%s/\s\+$//e
