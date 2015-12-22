@@ -30,11 +30,19 @@ alias photoshop="open -a Adobe\ Photoshop\ CC"
 
 alias dotfilez="vim ~/.zshrc"
 alias zshfilez="vim ~/.oh-my-zsh"
+alias zshsource="source ~/.zshrc"
 
 alias docz="cd ~/Documents"
 alias vdoc="vim ~/Documents"
 alias temp="cd ~/Temp && ls -la"
 alias cleantemp="rm -rv ~/Temp/*"
+
+alias vuu="cd ~/Documents/vuu-studio.com/vuu-tng"
+
+# cd into whatever is the forefront Finder window.
+cdf() {  # short for cdfinder
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -79,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
