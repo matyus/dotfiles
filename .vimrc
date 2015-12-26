@@ -29,6 +29,11 @@ set incsearch
 set laststatus=2
 set mouse=a
 set ruler
+set spell
+set history=1000
+set cursorline
+set splitright
+set splitbelow
 
 set showmode
 set showcmd
