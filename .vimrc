@@ -35,7 +35,10 @@ set showcmd
 set scrolloff=5
 
 let g:netrw_preview = 1
-let g:netrw_winsize = 55
+let g:netrw_liststyle = 0
+let g:netrw_winsize = -25
+let g:netrw_altv = 1
+let g:netrw_banner = 0
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
@@ -44,7 +47,8 @@ nnoremap <C-k> <C-w>k
 
 nnoremap <Leader>l :noh<CR>
 nmap <Leader>w :w<CR>
-nmap <Leader>e :Explore<CR>
+nmap <Leader>q :q<CR>
+nmap <Leader>e :Lexplore<CR>
 
 "Bubble line
 nmap ˚ ddkP
