@@ -32,8 +32,9 @@ set ruler
 set spell
 set history=1000
 set cursorline
-set splitright
-set splitbelow
+
+"set splitright
+"set splitbelow
 
 set showmode
 set showcmd
@@ -41,8 +42,8 @@ set scrolloff=5
 
 let g:netrw_preview = 1
 let g:netrw_liststyle = 0
-let g:netrw_winsize = -25
-let g:netrw_altv = 1
+let g:netrw_winsize = 25
+"let g:netrw_altv = 1
 let g:netrw_banner = 0
 
 nnoremap <C-h> <C-w>h
@@ -70,6 +71,6 @@ nmap <D-M-l> :bnext<CR>
 nmap <D-M-j> :bprevious<CR>
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 autocmd BufWritePre * :%s/\s\+$//e

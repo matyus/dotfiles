@@ -38,6 +38,7 @@ alias temp="cd ~/Temp && ls -la"
 alias cleantemp="rm -rv ~/Temp/*"
 
 alias vuu="cd ~/Documents/vuu-studio.com/vuu-tng"
+alias ghpages="docz && cd matyus.github.io/blog"
 
 # cd into whatever is the forefront Finder window.
 cdf() {  # short for cdfinder
@@ -106,3 +107,4 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+source /Users/michaelmatyus/.rvm/scripts/rvm
