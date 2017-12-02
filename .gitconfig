@@ -25,3 +25,8 @@
 [include]
 	# For username / github token / etc
 	path = ~/.gitconfig.local
+[user]
+	name = Michael Matyus
+	email = michael@maty.us
+[credential]
+	helper = osxkeychain
