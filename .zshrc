@@ -37,13 +37,17 @@ alias vdoc="vim ~/Documents"
 alias temp="cd ~/Temp && ls -la"
 alias cleantemp="rm -rv ~/Temp/*"
 
-alias vuu="cd ~/Documents/vuu-studio.com/vuu-tng"
-alias ghpages="docz && cd matyus.github.io/blog"
+alias justworks="docz && cd clockwork_web/ && git status"
+alias slackbrowser="docz && cd slack-export-browser && git status"
+
+alias start_postgres_db="pg_ctl -D /usr/local/var/postgres start"
 
 # cd into whatever is the forefront Finder window.
 cdf() {  # short for cdfinder
   cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
 }
+
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -88,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -107,4 +111,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-source /Users/michaelmatyus/.rvm/scripts/rvm
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
