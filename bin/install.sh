@@ -31,3 +31,7 @@ cp -vi "$HOME/.gitconfig" "$HOME/.gitconfig.old"
 echo "symlinking .gitconfig file…"
 
 ln -svf "$(pwd)/.gitconfig" "$HOME/.gitconfig"
+
+echo "symlinking aliases file…"
+
+ln -svf "$(pwd)/aliases" "$ZSH/custom/aliases.zsh"

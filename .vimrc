@@ -1,18 +1,6 @@
 set nocompatible
 
-execute pathogen#infect()
 syntax enable
-"let g:solarized_termtrans=1
-"let g:solarized_termcolors=16
-"let g:solarized_visibility="normal"
-"let g:solarized_contrast="normal"
-"set background=dark
-"colorscheme Tomorrow-Night
-"colorscheme codeschool
-"colorscheme predawn
-"colorscheme base16
-"let g:gruvbox_contrast_dark="hard"
-"colorscheme gruvbox
 colorscheme Tomorrow-Night
 
 set clipboard=unnamed
@@ -78,13 +66,20 @@ nmap Ò :bnext<CR>
 nmap <D-M-l> :bnext<CR>
 nmap <D-M-j> :bprevious<CR>
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 
-let g:syntastic_sass_checkers = ["sass_lint"]
-let g:syntastic_scss_checkers = ["sass_lint"]
-
-let g:syntastic_javascript_checkers = ['eslint']
 let g:jsx_ext_required = 0
+"
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
 
 autocmd BufWritePre * :%s/\s\+$//e
+"
+" Put these lines at the very end of your vimrc file.
+
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
