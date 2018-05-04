@@ -1,6 +1,7 @@
 # Config files
 alias dotfilez="vim ~/.zshrc"
 alias zshfilez="vim ~/.oh-my-zsh"
+alias zshcustom="vim ~/.oh-my-zsh/custom"
 alias zshsource="source ~/.zshrc"
 
 # Show/hide hidden files in Finder
