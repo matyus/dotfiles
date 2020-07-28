@@ -1,7 +1,6 @@
 set nocompatible
 
 syntax enable
-colorscheme Tomorrow-Night
 
 set clipboard=unnamed
 
