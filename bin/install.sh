@@ -8,6 +8,12 @@ echo "symlinking .vimrc file…"
 
 ln -svf "$(pwd)/.vimrc" "$HOME/.vimrc"
 
+echo "creating vim backups, swaps, and undo directories…"
+
+mkdir "$HOME/.vim/backups"
+mkdir "$HOME/.vim/swaps"
+mkdir "$HOME/.vim/undo"
+
 echo "moving existing .tmux.conf…"
 
 cp -vi "$HOME/.tmux.conf" "$HOME/.tmux.conf.old"
@@ -35,3 +41,4 @@ ln -svf "$(pwd)/.gitconfig" "$HOME/.gitconfig"
 echo "symlinking aliases file…"
 
 ln -svf "$(pwd)/aliases" "$ZSH/custom/aliases.zsh"
+
