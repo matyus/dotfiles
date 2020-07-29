@@ -1,27 +1,8 @@
 # cherry picking from https://github.com/paulirish/dotfiles/blob/master/.gitconfig
 
-[alias]
-	co = commit -am
-	pl = pull
-	pu = push
-	ss = status -s
-	sclone = clone --depth=1
-	df = diff --color --color-words --abbrev
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	co = checkout
-
-	# Show the diff between the latest commit and the current state
-	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-
-	reup = rebase-update
-
-[color]
-	ui = always
-
 # push easily. http://stackoverflow.com/a/23918418/89484
 [push]
 	default = current
-
 [include]
 	# For username / github token / etc
 	path = ~/.gitconfig.local

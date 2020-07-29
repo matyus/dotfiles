@@ -2,7 +2,6 @@
 alias dotfilez="vim ~/.zshrc"
 alias zshfilez="vim ~/.oh-my-zsh"
 alias zshcustom="vim ~/.oh-my-zsh/custom"
-alias zshsource="source ~/.zshrc"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -11,17 +10,4 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-# Browsers
-alias chrome="open -a Google\ Chrome"
-alias chromecanary="open -a Google\ Chrome\ Canary"
-alias safari="open -a Safari"
-alias firefox="open -a Firefox"
-
-alias start_postgres_db="pg_ctl -D /usr/local/var/postgres start"
-
-# cd into whatever is the forefront Finder window.
-cdf() {  # short for cdfinder
-  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
-}
 

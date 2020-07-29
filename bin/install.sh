@@ -40,5 +40,5 @@ ln -svf "$(pwd)/.gitconfig" "$HOME/.gitconfig"
 
 echo "symlinking aliases file…"
 
-ln -svf "$(pwd)/aliases" "$ZSH/custom/aliases.zsh"
+ln -svf "$(pwd)/oh-my-zsh/custom/aliases.zsh" "$ZSH/custom/aliases.zsh"
 
