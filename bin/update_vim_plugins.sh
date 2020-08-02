@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "symlinking vim plugins…"
+echo "updating vim plugins…"
 
-git submodule update
+git submodule update --recursive

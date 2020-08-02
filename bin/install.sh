@@ -14,6 +14,12 @@ mkdir "$HOME/.vim/backups"
 mkdir "$HOME/.vim/swaps"
 mkdir "$HOME/.vim/undo"
 
+echo "symlinking vim plugins…"
+
+ln -svf "$(pwd)/vim-plugins" "$HOME/.vim/pack/dotfiles-vim-plugins"
+
+
+
 echo "moving existing .tmux.conf…"
 
 cp -vi "$HOME/.tmux.conf" "$HOME/.tmux.conf.old"
@@ -21,6 +27,8 @@ cp -vi "$HOME/.tmux.conf" "$HOME/.tmux.conf.old"
 echo "symlinking .tmux.conf file…"
 
 ln -svf "$(pwd)/.tmux.conf" "$HOME/.tmux.conf"
+
+
 
 echo "moving existing .zshrc file…"
 
@@ -30,6 +38,8 @@ echo "symlinking .zshrc file…"
 
 ln -svf "$(pwd)/.zshrc" "$HOME/.zshrc"
 
+
+
 echo "moving existing .gitconfig file…"
 
 cp -vi "$HOME/.gitconfig" "$HOME/.gitconfig.old"
@@ -38,7 +48,9 @@ echo "symlinking .gitconfig file…"
 
 ln -svf "$(pwd)/.gitconfig" "$HOME/.gitconfig"
 
+
+
 echo "symlinking aliases file…"
 
-ln -svf "$(pwd)/oh-my-zsh/custom/aliases.zsh" "$ZSH/custom/aliases.zsh"
+ln -svf "$(pwd)/oh-my-zsh/custom.zsh" "$ZSH/custom/dotfiles-custom.zsh"
 
