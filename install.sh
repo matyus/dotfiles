@@ -1,13 +1,15 @@
 #!/bin/bash
 
-echo "handling vim"
+echo "handling old vim"
 
 cp -vi "$HOME/.vimrc" "$HOME/.vimrc.old"
+mv "$HOME/.vim/" "$HOME/.vim.old"
 
 echo "symlinking vim"
 
 ln -svf "$(pwd)/.vimrc" "$HOME/.vimrc"
 ln -svf "$(pwd)/.vim/" "$HOME/.vim"
+
 
 
 echo "moving existing .tmux.conf…"
@@ -20,13 +22,14 @@ ln -svf "$(pwd)/.tmux.conf" "$HOME/.tmux.conf"
 
 
 
-echo "moving existing .zshrc file…"
+echo "handling old zsh"
 
 cp -vi "$HOME/.zshrc" "$HOME/.zshrc.old"
 
-echo "symlinking .zshrc file…"
+echo "handle oh"
 
 ln -svf "$(pwd)/.zshrc" "$HOME/.zshrc"
+ln -svf "$(pwd)/oh-my-zsh/custom.zsh" "$ZSH/custom/dotfiles-custom.zsh"
 
 
 
@@ -37,10 +40,4 @@ cp -vi "$HOME/.gitconfig" "$HOME/.gitconfig.old"
 echo "symlinking .gitconfig file…"
 
 ln -svf "$(pwd)/.gitconfig" "$HOME/.gitconfig"
-
-
-
-echo "symlinking aliases file…"
-
-ln -svf "$(pwd)/oh-my-zsh/custom.zsh" "$ZSH/custom/dotfiles-custom.zsh"
 
