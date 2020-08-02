@@ -1,0 +1,27 @@
+[submodule "vim-plugins/start/ale"]
+	path = vim-plugins/start/ale
+	url = git@github.com:dense-analysis/ale.git
+[submodule "vim-plugins/start/ctrlp.vim"]
+	path = vim-plugins/start/ctrlp.vim
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "vim-plugins/start/vim-fugitive"]
+	path = vim-plugins/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "vim-plugins/start/vim-rhubarb"]
+	path = vim-plugins/start/vim-rhubarb
+	url = git@github.com:tpope/vim-rhubarb.git
+[submodule "vim-plugins/start/vim-prettier"]
+	path = vim-plugins/start/vim-prettier
+	url = git@github.com:prettier/vim-prettier.git
+[submodule "vim-plugins/start/vim-jsx-pretty"]
+	path = vim-plugins/start/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
+[submodule "vim-plugins/start/vim-commentary"]
+	path = vim-plugins/start/vim-commentary
+	url = git@github.com:tpope/vim-commentary.git
+[submodule "vim-plugins/start/vim-javascript"]
+	path = vim-plugins/start/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "vim-plugins/start/vim-graphql"]
+	path = vim-plugins/start/vim-graphql
+	url = git@github.com:jparise/vim-graphql.git
