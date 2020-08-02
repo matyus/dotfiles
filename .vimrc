@@ -1,5 +1,7 @@
 set nocompatible
 
+set noerrorbells visualbell
+
 syntax enable
 set background=dark
 colorscheme default
