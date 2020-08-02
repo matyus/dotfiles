@@ -1,23 +1,13 @@
 #!/bin/bash
 
-echo "moving existing .vimrc file…"
+echo "handling vim"
 
 cp -vi "$HOME/.vimrc" "$HOME/.vimrc.old"
 
-echo "symlinking .vimrc file…"
+echo "symlinking vim"
 
 ln -svf "$(pwd)/.vimrc" "$HOME/.vimrc"
-
-echo "creating vim backups, swaps, and undo directories…"
-
-mkdir "$HOME/.vim/backups"
-mkdir "$HOME/.vim/swaps"
-mkdir "$HOME/.vim/undo"
-
-echo "symlinking vim plugins…"
-
-ln -svf "$(pwd)/vim-plugins" "$HOME/.vim/pack/dotfiles-vim-plugins"
-
+ln -svf "$(pwd)/.vim/" "$HOME/.vim"
 
 
 echo "moving existing .tmux.conf…"
