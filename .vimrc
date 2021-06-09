@@ -1,12 +1,12 @@
 set nocompatible
 
-set noerrorbells visualbell
-
 syntax enable
 set background=dark
 colorscheme default
 
 set clipboard=unnamed
+
+set colorcolumn=120
 
 set backspace=indent,eol,start
 
@@ -35,6 +35,7 @@ set showmode
 set showcmd
 set scrolloff=5
 
+autocmd BufRead,BufNewFile *.md set filetype=markdown textwidth=80 colorcolumn=120
 let g:netrw_preview = 1
 let g:netrw_liststyle = 0
 let g:netrw_winsize = 20
@@ -76,11 +77,13 @@ let g:jsx_ext_required = 0
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
-\'javascript': ['eslint'],
+\'javascript': ['eslint', 'flow-language-server'],
 \}
 let g:ale_fixers = {
-\'javascript': ['eslint'],
+\'javascript': ['eslint', 'prettier'],
 \}
+
+let g:ale_fix_on_save = 1
 
 autocmd BufWritePre * :%s/\s\+$//e
 "
