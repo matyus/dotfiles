@@ -31,3 +31,18 @@
 [submodule ".vim/pack/vim-plugins/start/plantuml-syntax"]
 	path = .vim/pack/vim-plugins/start/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax.git
+[submodule ".vim/pack/vim-plugins/start/vim-terraform"]
+	path = .vim/pack/vim-plugins/start/vim-terraform
+	url = git@github.com:hashivim/vim-terraform.git
+[submodule ".vim/pack/vim-plugins/start/vim-svelte"]
+	path = .vim/pack/vim-plugins/start/vim-svelte
+	url = git@github.com:evanleck/vim-svelte.git
+[submodule ".vim/pack/vim-plugins/start/nginx.vim"]
+	path = .vim/pack/vim-plugins/start/nginx.vim
+	url = git@github.com:chr4/nginx.vim.git
+[submodule ".vim/.vim/pack/vim-plugins/start/vim-rubocop.vim"]
+	path = .vim/.vim/pack/vim-plugins/start/vim-rubocop.vim
+	url = git@github.com:ngmy/vim-rubocop.git
+[submodule ".vim/.vim/pack/vim-plugins/start/repo-vimrc.vim"]
+	path = .vim/.vim/pack/vim-plugins/start/repo-vimrc.vim
+	url = git@github.com:captbaritone/repo-vimrc.git

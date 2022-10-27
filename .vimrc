@@ -35,7 +35,7 @@ set showmode
 set showcmd
 set scrolloff=5
 
-autocmd BufRead,BufNewFile *.md set filetype=markdown textwidth=80 colorcolumn=120
+autocmd BufRead,BufNewFile *.md set filetype=markdown textwidth=80 colorcolumn=120 colorcolumn=80
 let g:netrw_preview = 1
 let g:netrw_liststyle = 0
 let g:netrw_winsize = 20
@@ -81,9 +81,17 @@ let g:ale_linters = {
 \}
 let g:ale_fixers = {
 \'javascript': ['eslint', 'prettier'],
+\'typescript': ['prettier'],
+\'typescriptreact': ['prettier'],
 \}
 
-let g:ale_fix_on_save = 1
+" SpellBad       xxx term=reverse ctermbg=9 gui=undercurl guisp=Blue
+" au ColorScheme * hi SpellBad guisp=Blue
+highlight ALEError ctermbg=4
+
+" let g:ale_fix_on_save = 0
+
+autocmd FileType solidity setlocal shiftwidth=4 softtabstop=4 expandtab
 
 autocmd BufWritePre * :%s/\s\+$//e
 "
