@@ -11,7 +11,7 @@ set colorcolumn=120
 set backspace=indent,eol,start
 
 filetype plugin indent on
-set shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+" set shiftwidth=2 tabstop=2 softtabstop=2
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 if exists("&undodir")

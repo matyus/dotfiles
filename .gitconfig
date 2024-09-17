@@ -11,3 +11,5 @@
 	email = michael@maty.us
 [credential]
 	helper = osxkeychain
+[init]
+	defaultBranch = main
