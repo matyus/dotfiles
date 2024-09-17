@@ -46,3 +46,4 @@
 [submodule ".vim/pack/vim-plugins/start/repo-vimrc"]
 	path = .vim/pack/vim-plugins/start/repo-vimrc
 	url = https://github.com/captbaritone/repo-vimrc
+	ignore = untracked
