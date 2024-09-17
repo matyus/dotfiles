@@ -40,3 +40,9 @@
 [submodule ".vim/pack/vim-plugins/start/nginx.vim"]
 	path = .vim/pack/vim-plugins/start/nginx.vim
 	url = git@github.com:chr4/nginx.vim.git
+[submodule ".vim/pack/vim-plugins/start/vim-rubocop"]
+	path = .vim/pack/vim-plugins/start/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop
+[submodule ".vim/pack/vim-plugins/start/repo-vimrc"]
+	path = .vim/pack/vim-plugins/start/repo-vimrc
+	url = https://github.com/captbaritone/repo-vimrc
