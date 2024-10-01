@@ -1,4 +1,4 @@
-set nocompatible
+
 
 syntax enable
 set background=dark
@@ -70,17 +70,20 @@ nmap Ò :bnext<CR>
 nmap <D-M-l> :bnext<CR>
 nmap <D-M-j> :bprevious<CR>
 
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
-
+" let g:coc_node_path='/Users/michaelmatyus/.asdf/shims/node'
 let g:jsx_ext_required = 0
 "
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
+let g:ale_linters_explicit = 1
 let g:ale_linters = {
 \'javascript': ['eslint', 'flow-language-server'],
 \}
 let g:ale_fixers = {
 \'javascript': ['eslint', 'prettier'],
+\'ruby': ['rubocop'],
 \'typescript': ['prettier'],
 \'typescriptreact': ['prettier'],
 \}

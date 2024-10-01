@@ -47,3 +47,12 @@
 	path = .vim/pack/vim-plugins/start/repo-vimrc
 	url = https://github.com/captbaritone/repo-vimrc
 	ignore = untracked
+[submodule ".vim/pack/vim-plugins/start/coc-tsserver"]
+	path = .vim/pack/vim-plugins/start/coc-tsserver
+	url = https://github.com/neoclide/coc-tsserver
+[submodule ".vim/pack/vim-plugins/start/coc.nvim"]
+	path = .vim/pack/vim-plugins/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule ".vim/pack/vim-plugins/start/vim-vue"]
+	path = .vim/pack/vim-plugins/start/vim-vue
+	url = https://github.com/posva/vim-vue.git
