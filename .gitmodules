@@ -56,3 +56,13 @@
 [submodule ".vim/pack/vim-plugins/start/vim-vue"]
 	path = .vim/pack/vim-plugins/start/vim-vue
 	url = https://github.com/posva/vim-vue.git
+[submodule ".vim/pack/vim-plugins/start/vim-context-commentstring"]
+	path = .vim/pack/vim-plugins/start/vim-context-commentstring
+	url = https://github.com/suy/vim-context-commentstring
+	ignore = dirty
+[submodule ".vim/pack/vim-plugins/start/coc-volar"]
+	path = .vim/pack/vim-plugins/start/coc-volar
+	url = https://github.com/yaegassy/coc-volar
+[submodule ".vim/pack/vim-plugins/start/vim-go"]
+	path = .vim/pack/vim-plugins/start/vim-go
+	url = https://github.com/fatih/vim-go

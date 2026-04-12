@@ -9,7 +9,10 @@
 [user]
 	name = Michael Matyus
 	email = michael@maty.us
+	signingkey = A2A8B26B2CF2D9DB
 [credential]
 	helper = osxkeychain
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = false

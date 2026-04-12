@@ -107,4 +107,27 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export GPG_TTY=$(tty)
+source /Users/michaelmatyus/Documents/justworkshr/clockwork_mobile/.dev.secrets
+export PATH=/opt/homebrew/opt/ccache/libexec:$PATH
+export CCACHE_SLOPPINESS=clang_index_store,file_stat_matches,include_file_ctime,include_file_mtime,ivfsoverlay,pch_defines,modules,system_headers,time_macros
+export CCACHE_FILECLONE=true
+export CCACHE_DEPEND=true
+export CCACHE_INODECACHE=true
+export CCACHE_COMPILERCHECK=content
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+eval "$(mise activate zsh)"
+
+# bun completions
+[ -s "/Users/michaelmatyus/.bun/_bun" ] && source "/Users/michaelmatyus/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
